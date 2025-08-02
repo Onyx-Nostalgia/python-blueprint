@@ -53,7 +53,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/johnthagen/python-blueprint
+      link: https://github.com/onyx-nostalgia/python-blueprint
 plugins:
   - search
   - offline:
@@ -84,7 +84,7 @@ site_name: fact
 copyright: Copyright &copy; 2018-2023 John Hagen
 # GitHub Specific Configuration.
 repo_name: python-blueprint
-repo_url: https://github.com/johnthagen/python-blueprint
+repo_url: https://github.com/onyx-nostalgia/python-blueprint
 edit_uri: edit/main/docs/user_guide/docs/
 nav:
   - index.md

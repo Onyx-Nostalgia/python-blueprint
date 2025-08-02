@@ -8,7 +8,7 @@ status: new
 ??? info "`python-blueprint` Project"
 
     For more information on how this was built and deployed, as well as other Python best
-    practices, see [`python-blueprint`](https://github.com/johnthagen/python-blueprint).
+    practices, see [`python-blueprint`](https://github.com/onyx-nostalgia/python-blueprint).
 
 !!! info
 

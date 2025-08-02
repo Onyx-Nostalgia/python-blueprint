@@ -3,9 +3,9 @@ name = "fact"
 version = "1.0.0"
 description = "Example Python project using best practices"
 authors = [
-    { name = "John Hagen", email = "johnthagen@users.noreply.github.com" }]
+    { name = "Onyx-Nostalgia", email = "nostalgia.onyx@gmail.com" }]
 license = "MIT"
-license-files = ["LICENSE*"]
+license-files = ["LICENSE"]
 readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -30,9 +30,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/johnthagen/python-blueprint"
-Documentation = "https://johnthagen.github.io/python-blueprint/"
-Repository = "https://github.com/johnthagen/python-blueprint"
+Homepage = "https://github.com/onyx-nostalgia/python-blueprint"
+Documentation = "https://onyx-nostalgia.github.io/python-blueprint/"
+Repository = "https://github.com/onyx-nostalgia/python-blueprint"
 
 [project.scripts]
 fact = "fact.cli:app"

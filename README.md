@@ -1,16 +1,24 @@
+
+<center>
+<img src="./docs/static/images/logo.png" alt="repo logo" width="100">
+
 # python-blueprint
 
-[![GitHub Actions][github-actions-badge]](https://github.com/johnthagen/python-blueprint/actions)
+[![GitHub Actions][github-actions-badge]](https://github.com/onyx-nostalgia/python-blueprint/actions)
 [![uv][uv-badge]](https://github.com/astral-sh/uv)
 [![Nox][nox-badge]](https://github.com/wntrblm/nox)
 [![Ruff][ruff-badge]](https://github.com/astral-sh/ruff)
 [![Type checked with mypy][mypy-badge]](https://mypy-lang.org/)
+[![License: MIT][license-badge]](./LICENSE)
 
-[github-actions-badge]: https://github.com/johnthagen/python-blueprint/actions/workflows/ci.yml/badge.svg
-[uv-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json
-[nox-badge]: https://img.shields.io/badge/%F0%9F%A6%8A-Nox-D85E00.svg
-[ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
-[mypy-badge]: https://www.mypy-lang.org/static/mypy_badge.svg
+
+[github-actions-badge]: https://github.com/onyx-nostalgia/python-blueprint/actions/workflows/ci.yml/badge.svg
+[uv-badge]: https://custom-icon-badges.demolab.com/badge/uv-261230.svg?logo=uv&style=for-the-badge&labelColor=grey
+[nox-badge]: https://img.shields.io/badge/%F0%9F%A6%8A-Nox-D85E00.svg?style=for-the-badge
+[ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json&style=for-the-badge
+[mypy-badge]: https://img.shields.io/badge/mypy-passing-brightgreen?style=for-the-badge
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge
+</center>
 
 Example Python project that demonstrates how to create a Python package using the latest
 Python testing, linting, and type checking tooling. The project contains a `fact` package that
@@ -18,7 +26,7 @@ provides a simple implementation of the
 [factorial algorithm](https://en.wikipedia.org/wiki/Factorial) (`fact.lib`) and a command line
 interface (`fact.cli`).
 
-# Package Management
+# Package Management 📦
 
 This package uses [uv](https://docs.astral.sh/uv/) to manage dependencies and
 isolated [Python virtual environments](https://docs.python.org/3/library/venv.html).
@@ -39,7 +47,7 @@ To upgrade a specific version of Python to the latest patch release:
 uv python install --reinstall 3.13
 ```
 
-## Dependencies
+## Dependencies 🔗
 
 Dependencies are defined in [`pyproject.toml`](./pyproject.toml) and specific versions are locked
 into [`uv.lock`](./uv.lock). This allows for exact reproducible environments across
@@ -57,7 +65,7 @@ To upgrade all dependencies to their latest versions:
 uv lock --upgrade
 ```
 
-## Packaging
+## Packaging 📦
 
 This project is designed as a Python package, meaning that it can be bundled up and redistributed
 as a single compressed file.
@@ -80,7 +88,7 @@ This will generate `dist/fact-1.0.0.tar.gz` and `dist/fact-1.0.0-py3-none-any.wh
 > Read more about the [advantages of wheels](https://pythonwheels.com/) to understand why
 > generating wheel distributions are important.
 
-## Publish Distributions to PyPI
+## Publish Distributions to PyPI 🌐
 
 Source and wheel redistributable packages can
 be [published to PyPI](https://docs.astral.sh/uv/guides/package/) or installed
@@ -94,7 +102,7 @@ uv publish
 > To enable publishing, remove the `"Private :: Do Not Upload"`
 > [trove classifier](https://pypi.org/classifiers/).
 
-# Enforcing Code Quality
+# Enforcing Code Quality ✅
 
 Automated code quality checks are performed using [Nox](https://nox.thea.codes/en/stable/) and
 [`nox-uv`](https://github.com/dantebben/nox-uv). Nox will automatically create virtual environments
@@ -111,7 +119,7 @@ To run all default sessions:
 uv run nox
 ```
 
-## Unit Testing
+## Unit Testing 🧪
 
 Unit testing is performed with [pytest](https://pytest.org/). pytest has become the de facto Python
 unit testing framework. Some key advantages over the built-in
@@ -143,7 +151,7 @@ To pass arguments to `pytest` through `nox`:
 uv run nox -s test -- -k invalid_factorial
 ```
 
-## Code Style Checking
+## Code Style Checking 🎨
 
 [PEP 8](https://peps.python.org/pep-0008/) is the universally accepted style guide for Python
 code. PEP 8 code compliance is verified using [Ruff][Ruff]. Ruff is configured in the
@@ -166,9 +174,9 @@ To automatically fix fixable lint errors, run:
 uv run nox -s lint_fix
 ```
 
-## Automated Code Formatting
+## Automated Code Formatting 🛠️
 
-[Ruff][Ruff] is used to automatically format code and group and sort imports.
+[Ruff][Ruff] is used to automatically format code and group and sort imports. It ensures that your code adheres to the project's style guidelines and is easy to read.
 
 To automatically format code, run:
 
@@ -176,7 +184,13 @@ To automatically format code, run:
 uv run nox -s fmt
 ```
 
-## Type Checking
+To check for formatting issues without making changes, run:
+
+```shell
+uv run nox -s fmt_check
+```
+
+## Type Checking 🔍
 
 [Type annotations](https://docs.python.org/3/library/typing.html) allows developers to include
 optional static typing information to Python source code. This allows static analyzers such
@@ -218,9 +232,9 @@ runs all tests, lints, and type checking for every commit and pull request to th
 
 GitHub Actions is configured in [`.github/workflows/ci.yml`](./.github/workflows/ci.yml).
 
-# Documentation
+# Documentation 📚
 
-## Generating a User Guide
+## Generating a User Guide 📝
 
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) is a powerful static site
 generator that combines easy-to-write Markdown, with a number of Markdown extensions that increase
@@ -262,9 +276,9 @@ Each time the `main` Git branch is updated, the
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) GitHub Action will
 automatically build the user guide and publish it to [GitHub Pages](https://pages.github.com/).
 This is configured in the `docs_github_pages` Nox session. This hosted user guide
-can be viewed at <https://johnthagen.github.io/python-blueprint/>.
+can be viewed at <https://onyx-nostalgia.github.io/python-blueprint/>.
 
-## Generating API Documentation
+## Generating API Documentation 📖
 
 This project uses [mkdocstrings](https://github.com/mkdocstrings/mkdocstrings) plugin for
 MkDocs, which renders
@@ -286,7 +300,7 @@ Returns:
 """
 ```
 
-# Project Structure
+# Project Structure 🏗️
 
 Traditionally, Python projects place the source for their packages in the root of the project
 structure, like:
@@ -352,11 +366,11 @@ fact
 └── pyproject.toml
 ```
 
-# Licensing
+# Licensing ⚖️
 
 Licensing for the project is defined in:
 
-- [`LICENSE.txt`](./LICENSE.txt)
+- [`LICENSE`](./LICENSE)
 - [`pyproject.toml`](./pyproject.toml)
 
 This project uses a common permissive license, the MIT license.
@@ -374,7 +388,7 @@ $ uv run nox -s licenses
  markdown-it-py     3.0.0    MIT License 
 ```
 
-# Container
+# Container 🐳
 
 [Docker](https://www.docker.com/) is a tool that allows for software to be packaged into isolated
 containers. It is not necessary to use Docker in a Python project, but for the purposes of
@@ -399,9 +413,9 @@ To run the image in a container:
 docker run --rm --interactive --tty fact 5
 ```
 
-# Miscellaneous
+# Miscellaneous 🌟
 
-## Shebang Line
+## Shebang Line 🖊️
 
 The proper [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line for Python scripts is:
 
@@ -428,7 +442,7 @@ print(httpx.get("https://example.com").text)
 
 On Windows, remove the `-S` from the shebang and execute the script using the `py` launcher.
 
-## Package Dependency Tree
+## Package Dependency Tree 🌲
 
 `uv tree` is a command for listing installed packages in the form of a dependency tree. For large
 projects, it is often difficult to determine dependency relationships soley from manually
@@ -449,7 +463,8 @@ fact v1.0.0
     └── shellingham v1.5.4 (extra: standard)
 ```
 
-# PyCharm Configuration
+<details>
+<summary> <h1>PyCharm Configuration 🖥️</h1> </summary>
 
 > [!TIP]
 > Looking for a vivid dark color scheme for PyCharm?
@@ -518,3 +533,4 @@ recommended way to launch Nox from PyCharm is to create a **Python**
   rendered properly
 
 ![](docs/static/images/nox_run_configuration.png)
+</details>

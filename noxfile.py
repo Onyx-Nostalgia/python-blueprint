@@ -21,11 +21,12 @@ def test(s: Session) -> None:
         *s.posargs,
     )
 
-    # Run tests again with legacy JUnit XML format for CodeCov: Test Analysis
+    # CodeCov: Test Analysis
     s.run(
         "pytest",
         "--cov=fact",
         "--cov-fail-under=100",
+        "--cov-report=xml",
         "--junitxml=junit.xml",
         "-o",
         "junit_family=legacy",

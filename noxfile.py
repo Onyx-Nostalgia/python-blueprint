@@ -16,7 +16,15 @@ def test(s: Session) -> None:
         "--cov=fact",
         "--cov-report=html",
         "--cov-report=term",
-        "--cov-report=xml",
+        "--cov-fail-under=100",
+        "tests",
+        *s.posargs,
+    )
+
+    # Run tests again with legacy JUnit XML format for CodeCov: Test Analysis
+    s.run(
+        "pytest",
+        "--cov=fact",
         "--cov-fail-under=100",
         "--junitxml=junit.xml",
         "-o",

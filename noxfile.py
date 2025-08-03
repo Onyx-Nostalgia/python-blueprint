@@ -18,6 +18,9 @@ def test(s: Session) -> None:
         "--cov-report=term",
         "--cov-report=xml",
         "--cov-fail-under=100",
+        "--junitxml=junit.xml",
+        "-o",
+        "junit_family=legacy",
         "tests",
         *s.posargs,
     )

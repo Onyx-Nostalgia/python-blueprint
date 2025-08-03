@@ -16,20 +16,11 @@ def test(s: Session) -> None:
         "--cov=fact",
         "--cov-report=html",
         "--cov-report=term",
-        "--cov-fail-under=100",
-        "tests",
-        *s.posargs,
-    )
-
-    # CodeCov: Test Analysis
-    s.run(
-        "pytest",
-        "--cov=fact",
-        "--cov-fail-under=100",
         "--cov-report=xml",
-        "--junitxml=junit.xml",
-        "-o",
-        "junit_family=legacy",
+        "--cov-fail-under=100",
+        # "--junitxml=junit.xml",
+        # "-o",
+        # "junit_family=legacy",
         "tests",
         *s.posargs,
     )

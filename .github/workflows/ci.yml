@@ -38,15 +38,21 @@ jobs:
 
       - name: Test with Nox
         run: uv run nox -s test-${{ matrix.python-version }}
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@main
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          verbose: true
+          
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          verbose: true
 
   quality:
     runs-on: ubuntu-24.04

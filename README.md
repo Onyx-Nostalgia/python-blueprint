@@ -12,7 +12,7 @@
 [![License: MIT][license-badge]](./LICENSE)
 
 
-[github-actions-badge]: https://github.com/onyx-nostalgia/python-blueprint/actions/workflows/ci.yml/badge.svg
+[github-actions-badge]: https://img.shields.io/github/actions/workflow/status/onyx-nostalgia/python-blueprint/ci.yml?style=for-the-badge&logo=github
 [uv-badge]: https://custom-icon-badges.demolab.com/badge/uv-261230.svg?logo=uv&style=for-the-badge&labelColor=grey
 [nox-badge]: https://img.shields.io/badge/%F0%9F%A6%8A-Nox-D85E00.svg?style=for-the-badge
 [ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json&style=for-the-badge

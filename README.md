@@ -1,5 +1,5 @@
+<div align="center">
 
-<center>
 <img src="./docs/static/images/logo.png" alt="repo logo" width="100">
  
 # python-blueprint
@@ -19,7 +19,8 @@
 [mypy-badge]: https://img.shields.io/badge/mypy-passing-brightgreen?style=for-the-badge
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge
 [Codecov (with branch)]: https://img.shields.io/codecov/c/github/Onyx-Nostalgia/python-blueprint/feature-codecov?style=for-the-badge&logo=codecov
-</center>
+
+</div>
 
 Example Python project that demonstrates how to create a Python package using the latest
 Python testing, linting, and type checking tooling. The project contains a `fact` package that

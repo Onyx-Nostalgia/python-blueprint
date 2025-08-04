@@ -1,7 +1,7 @@
+<div align="center">
 
-<center>
 <img src="./docs/static/images/logo.png" alt="repo logo" width="100">
-
+ 
 # python-blueprint
 
 [![GitHub Actions][github-actions-badge]](https://github.com/onyx-nostalgia/python-blueprint/actions)
@@ -10,15 +10,17 @@
 [![Ruff][ruff-badge]](https://github.com/astral-sh/ruff)
 [![Type checked with mypy][mypy-badge]](https://mypy-lang.org/)
 [![License: MIT][license-badge]](./LICENSE)
+[![Codecov][Codecov (with branch)]](https://codecov.io/github/Onyx-Nostalgia/python-blueprint)
 
-
-[github-actions-badge]: https://github.com/onyx-nostalgia/python-blueprint/actions/workflows/ci.yml/badge.svg
+[github-actions-badge]: https://img.shields.io/github/actions/workflow/status/onyx-nostalgia/python-blueprint/ci.yml?style=for-the-badge&logo=github
 [uv-badge]: https://custom-icon-badges.demolab.com/badge/uv-261230.svg?logo=uv&style=for-the-badge&labelColor=grey
 [nox-badge]: https://img.shields.io/badge/%F0%9F%A6%8A-Nox-D85E00.svg?style=for-the-badge
 [ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json&style=for-the-badge
 [mypy-badge]: https://img.shields.io/badge/mypy-passing-brightgreen?style=for-the-badge
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge
-</center>
+[Codecov (with branch)]: https://img.shields.io/codecov/c/github/Onyx-Nostalgia/python-blueprint/feature-codecov?style=for-the-badge&logo=codecov
+
+</div>
 
 Example Python project that demonstrates how to create a Python package using the latest
 Python testing, linting, and type checking tooling. The project contains a `fact` package that

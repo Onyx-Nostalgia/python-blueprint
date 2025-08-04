@@ -16,7 +16,11 @@ def test(s: Session) -> None:
         "--cov=fact",
         "--cov-report=html",
         "--cov-report=term",
+        "--cov-report=xml:coverage/reports/coverage.xml",
         "--cov-fail-under=100",
+        "--junitxml=coverage/reports/junit.xml",
+        "-o",
+        "junit_family=legacy",
         "tests",
         *s.posargs,
     )

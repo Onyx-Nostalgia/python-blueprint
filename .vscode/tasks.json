@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Validate codecov.yml",
+            "type": "shell",
+            "command": "curl -X POST --data-binary @codecov.yml https://codecov.io/validate",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            }
+        }
+    ]
+}

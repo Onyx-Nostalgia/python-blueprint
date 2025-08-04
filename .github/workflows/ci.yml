@@ -14,6 +14,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Validate codecov.yml
+        # Check if the file exists before running the step
+        if: ${{ hashFiles('codecov.yml') != '' }}
+        run: |
+          echo "Found codecov.yml. Starting validation..."
+          curl -s -X POST --data-binary @codecov.yml https://codecov.io/validate | tee /dev/stderr | grep -q "Valid\!"
 
       - name: Install uv
         uses: astral-sh/setup-uv@v5
@@ -32,6 +38,27 @@ jobs:
 
       - name: Test with Nox
         run: uv run nox -s test-${{ matrix.python-version }}
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@main
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          verbose: true
+          disable_search: true
+          directory: "coverage/reports/"
+          files: "coverage/reports/coverage.xml"
+          
+      - name: Upload test results to Codecov
+        if: ${{ !cancelled() }}
+        uses: codecov/test-results-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          verbose: true
+          disable_search: true
+          directory: "coverage/reports/"
+          files: "coverage/reports/junit.xml"
 
   quality:
     runs-on: ubuntu-24.04
@@ -55,7 +82,7 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
-      - name: Test with Nox
+      - name: Quality with Nox
         run: uv run nox -s ${{ matrix.nox-session }}
 
   container:

@@ -45,6 +45,9 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
           verbose: true
+          disable_search: true
+          directory: "coverage/reports/"
+          files: "coverage/reports/coverage.xml"
           
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
@@ -53,6 +56,9 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
           verbose: true
+          disable_search: true
+          directory: "coverage/reports/"
+          files: "coverage/reports/junit.xml"
 
   quality:
     runs-on: ubuntu-24.04

@@ -18,7 +18,7 @@
 [ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json&style=for-the-badge
 [mypy-badge]: https://img.shields.io/badge/mypy-passing-brightgreen?style=for-the-badge
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge
-[Codecov (with branch)]: https://img.shields.io/codecov/c/github/Onyx-Nostalgia/python-blueprint/main?style=for-the-badge&logo=codecov
+[codecov-badge]: https://img.shields.io/codecov/c/github/Onyx-Nostalgia/python-blueprint/main?style=for-the-badge&logo=codecov
 
 </div>
 

@@ -13,7 +13,10 @@
 [![Codecov][Codecov (with branch)]](https://codecov.io/github/Onyx-Nostalgia/python-blueprint)
 
 [github-actions-badge]: https://img.shields.io/github/actions/workflow/status/onyx-nostalgia/python-blueprint/ci.yml?style=for-the-badge&logo=github
-[uv-badge]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOnyx-Nostalgia%2Fuv%2Frefs%2Fheads%2Ffix%2Flogo-badge%2Fassets%2Fbadge%2Fv0.json&style=for-the-badge
+[![Codecov][Codecov (with branch)]](https://codecov.io/github/Onyx-Nostalgia/python-blueprint)
+
+[github-actions-badge]: https://img.shields.io/github/actions/workflow/status/onyx-Nostalgia/python-blueprint/ci.yml?style=for-the-badge&logo=github
+[uv-badge]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOnyx-Nostalgia%2Fuv%2F8b198970a10b3dd9abd284715349abb855019dc2%2Fassets%2Fbadge%2Fv0.json&style=for-the-badge
 [nox-badge]: https://img.shields.io/badge/%F0%9F%A6%8A-Nox-D85E00.svg?style=for-the-badge
 [ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json&style=for-the-badge
 [mypy-badge]: https://img.shields.io/badge/mypy-passing-brightgreen?style=for-the-badge

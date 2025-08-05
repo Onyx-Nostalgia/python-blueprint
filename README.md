@@ -10,15 +10,15 @@
 [![Ruff][ruff-badge]](https://github.com/astral-sh/ruff)
 [![Type checked with mypy][mypy-badge]](https://mypy-lang.org/)
 [![License: MIT][license-badge]](./LICENSE)
-[![Codecov][Codecov (with branch)]](https://codecov.io/github/Onyx-Nostalgia/python-blueprint)
+[![Codecov][codecov-badge]](https://codecov.io/github/Onyx-Nostalgia/python-blueprint)
 
 [github-actions-badge]: https://img.shields.io/github/actions/workflow/status/onyx-nostalgia/python-blueprint/ci.yml?style=for-the-badge&logo=github
-[uv-badge]: https://custom-icon-badges.demolab.com/badge/uv-261230.svg?logo=uv&style=for-the-badge&labelColor=grey
+[uv-badge]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOnyx-Nostalgia%2Fuv%2F8b198970a10b3dd9abd284715349abb855019dc2%2Fassets%2Fbadge%2Fv0.json&style=for-the-badge
 [nox-badge]: https://img.shields.io/badge/%F0%9F%A6%8A-Nox-D85E00.svg?style=for-the-badge
 [ruff-badge]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json&style=for-the-badge
 [mypy-badge]: https://img.shields.io/badge/mypy-passing-brightgreen?style=for-the-badge
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge
-[Codecov (with branch)]: https://img.shields.io/codecov/c/github/Onyx-Nostalgia/python-blueprint/feature-codecov?style=for-the-badge&logo=codecov
+[codecov-badge]: https://img.shields.io/codecov/c/github/Onyx-Nostalgia/python-blueprint/main?style=for-the-badge&logo=codecov
 
 </div>
 
